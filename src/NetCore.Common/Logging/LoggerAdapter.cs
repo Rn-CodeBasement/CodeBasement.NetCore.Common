@@ -12,6 +12,11 @@ namespace CodeBasement.NetCore.Common.Logging
       _logger = logger;
     }
 
+    public void LogTrace(string message, params object[] args)
+    {
+      _logger.LogTrace(message, args);
+    }
+
     public void LogInformation(string message, params object[] args)
     {
       _logger.LogInformation(message, args);
